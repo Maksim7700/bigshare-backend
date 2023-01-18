@@ -1,9 +1,5 @@
 package com.big.share.bigshare.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 public class MailModel {
 
     private String email;
@@ -11,6 +7,9 @@ public class MailModel {
     private String phone;
     private String company;
     private String comment;
+
+    public MailModel() {
+    }
 
     public MailModel(String email, String name, String phone, String company, String comment) {
         this.email = email;

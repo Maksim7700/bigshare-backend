@@ -33,9 +33,4 @@ public class QuestionnaireController {
         simpleMailMessage.setText(mailModel.toString());
         javaMailSender.send(simpleMailMessage);
     }
-
-    @GetMapping("/get")
-    public ResponseEntity getAll() {
-        return ResponseEntity.ok("HL");
-    }
 }
